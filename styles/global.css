@@ -33,3 +33,18 @@ header .logo {
 main {
     padding: 20px;
 }
+
+.submit {
+    border-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.hide {
+    display: none;
+}
+
+.ball {
+    width: 300px;
+}
