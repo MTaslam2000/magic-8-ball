@@ -14,3 +14,6 @@
 
 -   hide text prompt then display image
 -   make array and pick random number from array -1
+-   set content of the answer p to random answer
+-   hide the ball and the answer
+-   show final prompt
