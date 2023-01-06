@@ -37,3 +37,7 @@ main {
 .hide {
     display: none;
 }
+
+.ball {
+    width: 300px;
+}
