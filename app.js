@@ -4,6 +4,8 @@
 const submitBtn = document.getElementById('submit');
 const promptSection = document.getElementById('prompt');
 const fortuneSection = document.getElementById('fortune');
+const answersP = document.getElementById('answer');
+const resetBtn = document.getElementById('reset');
 /* State */
 
 /* Events */
@@ -11,10 +13,7 @@ const fortuneSection = document.getElementById('fortune');
 submitBtn.addEventListener('click', () => {
     toggleSections();
     const randomInt = Math.floor(Math.random() * answers.length);
-    console.log(randomInt);
     const randomChoice = answers[randomInt];
-    console.log(randomChoice);
-    console.log('answers[12], answers[12]');
     answersP.textContent = randomChoice;
 });
 
@@ -22,6 +21,11 @@ function toggleSections() {
     promptSection.classList.toggle('hide');
     fortuneSection.classList.toggle('hide');
 }
+
+resetBtn.addEventListener('click', () => {
+    toggleSections();
+});
+
 
 const answers = [
     "Yes, definitely",
